@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro do Aluno</title>
+    <link rel="stylesheet" href="estilos.css ">
+</head>
+<header>
+    <nav style="text-align: center;">
+        <a href="index.html">Home</a>
+        <a href="provas.html">Provas</a>
+        <a href="cadastro.html">Cadastro do aluno</a>
+        <a href="notas.html">Notas</a>
+        <a href="horarios.html">Lista de Horários</a>
+    </nav>
+</header>
+<body>
+    <!-- Cadastro do aluno -->
+    <div>
+        <h1>Cadastro do aluno</h1>
+        <form action="/submit" method="post">
+            <label for="name">Nome:</label><br>
+            <input type="text" id="name" name="name"><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email"><br><br>
+            <input type="submit" value="Enviar"><br><br>
+            <label for="data de nascimento">Data de nascimento:</label>
+            <input type="date" id="data de nascimento" name="data de nascimento">
+            <label for="curso">Curso: </label>
+            <select id="curso" name="curso">
+                <option value="python">Curso de Python</option>
+                <option value="javascript">Curso de JavaScript</option>
+                <option value="htmlcss">Curso de HTML/CSS</option>
+            </select><br><br>
+            <input type="text" id="senha" name="senha" placeholder="Senha"></input><br><br> 
+            <label for="observação">Observação:</label><br>
+            <textarea id="observação" name="observação" rows="4" cols="50"></textarea><br><br>
+            <label for="turno">Turma:</label><br>
+            <input type="radio" id="manha" name="turno" value="manha">
+            <label for="manha">Manhã</label><br>
+            <input type="radio" id="tarde" name="turno" value="tarde">
+            <label for="tarde">Tarde</label><br>
+            <button>Salvar</button>
+        </form>
+    </div>
+</body>
+</html>
